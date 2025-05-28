@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="body">
+  <audio id="background-music" src="music.mp3" autoplay loop></audio>
+
+  <header>
+    <h1>Toko Kami</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('info')">Informasi</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="active">
+      <div class="theme-buttons">
+        <button onclick="toggleTheme()">Tema Terang/Gelap</button>
+        <button onclick="toggleSnow()">Tema Salju</button>
+        <button onclick="toggleRain()">Tema Hujan</button>
+        <button onclick="toggleStars()">Tema Malam</button>
+        <button onclick="toggleWeather()">Cuaca</button>
+        <button onclick="toggleMusic()">Matikan Musik</button>
+      </div>
+
+      <div class="products">
+        <h2>Produk Kami</h2>
+        <div class="product-grid">
+          <!-- Ulangi 6 kali -->
+          <div class="product">Produk 1</div>
+          <div class="product">Produk 2</div>
+          <div class="product">Produk 3</div>
+          <div class="product">Produk 4</div>
+          <div class="product">Produk 5</div>
+          <div class="product">Produk 6</div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/628123456789 " target="_blank"><button>Kirim ke WhatsApp</button></a>
+    </section>
+
+    <!-- Informasi Section -->
+    <section id="info">
+      <h2>Informasi</h2>
+      <p><strong>Nama Toko:</strong> Toko Online BiruOranye</p>
+      <p><strong>Email:</strong> <a href="mailto:tokoku@example.com">tokoku@example.com</a></p>
+      <p><strong>Alamat:</strong> Jalan Belanja No.1, Kota Seru</p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/example " target="_blank">Lihat Proyek di GitHub</a></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
