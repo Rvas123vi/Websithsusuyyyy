@@ -1,0 +1,72 @@
+:root {
+  --warna-utama: #007bff;
+  --warna-kedua: orange;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+header {
+  background: var(--warna-utama);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--warna-kedua);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.products {
+  margin: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--warna-utama);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+a button {
+  display: inline-block;
+}
